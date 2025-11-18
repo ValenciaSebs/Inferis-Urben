@@ -1,7 +1,7 @@
 # Inferis-Urben
 
 <div align="center">
-  <img src="img/logo/Logo-con-fondo.png" alt="Logo del Proyecto" width="60%" />
+  <img src="img/logo/Logoconfondo.png" alt="Logo del Proyecto" width="60%" />
 </div>
 
 ---
