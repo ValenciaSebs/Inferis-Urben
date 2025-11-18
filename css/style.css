@@ -31,6 +31,7 @@ body {
 }
 
 body {
+  background-image: url('../img/textures/fondo2-Sin.png');
   background-color: #f4eed8;
   color: #000000;
 }
@@ -219,7 +220,7 @@ section[id]:target {
 /* Limitar el tamaño del carrusel que está DENTRO de la tarjeta (el visible) */
 #carouselExampleSlidesOnly .carousel-inner {
   /* Define la altura máxima que deseas para el carrusel de la tarjeta */
-  height: 135px;
+  height: 250px;
   position: relative;
 }
 
@@ -227,7 +228,7 @@ section[id]:target {
 
 /* Opcionalmente, puedes aplicar una altura DIFERENTE a los carruseles de los modales si lo necesitas */
 #carouselModal .carousel-inner {
-  height: 350px;
+  height: 500px;
   /* Un poco más grandes en el modal */
   position: relative;
 }
@@ -242,21 +243,16 @@ section[id]:target {
 
 
 
-/* Estilo del botón y texto */
 
 
-/* Contenedor para manejar las imágenes del icono dentro del botón */
+
+
 .image-icon-container {
-  /* Mantenemos el contenedor de imagen pequeño y al final del botón */
   position: relative;
   width: 25px;
-  /* Ancho específico para el icono. Ajusta si es necesario */
   height: 25px;
-  /* Altura específica para el icono. Ajusta si es necesario */
   margin-left: 10px;
-  /* Espacio entre el texto y el icono */
   display: flex;
-  /* Para asegurar que las imágenes se posicionen bien */
   align-items: center;
   justify-content: center;
 }
@@ -270,10 +266,8 @@ section[id]:target {
   top: 0;
   left: 0;
   transition: opacity 0.3s ease-in-out;
-  /* Transición suave */
 }
 
-/* Estado por defecto: Muestra el icono rojo, oculta el blanco */
 .death-btn .default-icon {
   opacity: 1;
 }
@@ -298,7 +292,6 @@ section[id]:target {
   opacity: 0;
 }
 
-/* Estado de HOVER: Oculta el icono rojo, muestra el blanco */
 .death-btn:hover .default-icon {
   opacity: 0;
 }

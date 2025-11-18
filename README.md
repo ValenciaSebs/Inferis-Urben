@@ -5,7 +5,7 @@
 </div>
 
 ---
-Es una página web que busca contar aquellas historias que tiene medellín pero nosotros no vemos como: Muerte, Religión y Misterio
+Es una página web estilo One Page que busca contar aquellas historias que tiene medellín pero nosotros no vemos como: Muerte, Religión y Misterio
 
 ---
 
