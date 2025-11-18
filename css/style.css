@@ -185,56 +185,25 @@ html {
   }
 }
 
-
-/* AJUSTE PARA EL FIXED NAVBAR SCROLL OFFSET */
-
-/* 1. Define el desplazamiento (offset) con padding-top */
-/* El valor debe ser ligeramente mayor a la altura de tu navbar (ej. 100px) */
-/* Este padding empuja el contenido hacia abajo */
-section[id] {
-  padding-top: 130px;
-  /* Ajusta según la altura final de tu navbar */
-  margin-top: -130px;
-  /* Compensación negativa del padding */
-}
-
-/* 2. Cuando la sección es el objetivo del hash (#), haz que el scroll se detenga correctamente */
-/* La pseudo-clase :target se activa cuando el ID de la sección coincide con el fragmento de la URL */
-section[id]:target {
-  /* Aquí realmente no necesitas cambiar nada más, ya que el truco del margen negativo */
-  /* y el padding-top ya están aplicados al elemento que es el destino del enlace (el :target) */
-  /* La combinación de ambos hace que el borde superior del contenido quede justo debajo del navbar */
-  padding-top: 130px;
-  margin-top: -130px;
-}
-
-/* Si tu navbar tiene una altura variable en móvil, considera ajustar este valor */
-@media (max-width: 991.98px) {
-  /* Para móviles, si el navbar es más pequeño (Bootstrap colapsado), puedes usar un valor menor, */
-  /* pero generalmente el valor del navbar sin colapsar es suficiente para cubrir ambos casos */
-  /* ¡Puedes probar con 100px primero, ya que es seguro! */
-}
-
-
-
-/* Limitar el tamaño del carrusel que está DENTRO de la tarjeta (el visible) */
-#carouselExampleSlidesOnly .carousel-inner {
-  /* Define la altura máxima que deseas para el carrusel de la tarjeta */
-  height: 250px;
-  position: relative;
-}
-
-
-
-/* Opcionalmente, puedes aplicar una altura DIFERENTE a los carruseles de los modales si lo necesitas */
-#carouselModal .carousel-inner {
+/*Modal Muerte*/
+#carouselRituales .carousel-inner {
   height: 500px;
-  /* Un poco más grandes en el modal */
   position: relative;
 }
 
-/* Y sus imágenes... */
-#carouselModal .carousel-item img {
+#carouselRituales .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#carouselUmbral .carousel-inner {
+  height: 500px;
+  position: relative;
+}
+
+#carouselUmbral .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -242,8 +211,56 @@ section[id]:target {
 }
 
 
+/*Modal Mistico*/
+#carouselMistico1 .carousel-inner {
+  height: 500px;
+  position: relative;
+}
+
+#carouselMistico1 .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#carouselMistico2 .carousel-inner {
+  height: 500px;
+  position: relative;
+}
+
+#carouselMistico2 .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 
+/*Modal Religion*/
+#carouselReligion1 .carousel-inner {
+  height: 500px;
+  position: relative;
+}
+
+#carouselReligion1 .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#carouselReligion2 .carousel-inner {
+  height: 500px;
+  position: relative;
+}
+
+#carouselReligion2 .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 
 
@@ -314,4 +331,44 @@ section[id]:target {
 
 .religi-btn:hover .hover-icon {
   opacity: 1;
+}
+
+
+
+/* AJUSTE PARA EL FIXED NAVBAR SCROLL OFFSET */
+
+/* 1. Define el desplazamiento (offset) con padding-top */
+/* El valor debe ser ligeramente mayor a la altura de tu navbar (ej. 100px) */
+/* Este padding empuja el contenido hacia abajo */
+section[id] {
+  padding-top: 130px;
+  /* Ajusta según la altura final de tu navbar */
+  margin-top: -130px;
+  /* Compensación negativa del padding */
+}
+
+/* 2. Cuando la sección es el objetivo del hash (#), haz que el scroll se detenga correctamente */
+/* La pseudo-clase :target se activa cuando el ID de la sección coincide con el fragmento de la URL */
+section[id]:target {
+  /* Aquí realmente no necesitas cambiar nada más, ya que el truco del margen negativo */
+  /* y el padding-top ya están aplicados al elemento que es el destino del enlace (el :target) */
+  /* La combinación de ambos hace que el borde superior del contenido quede justo debajo del navbar */
+  padding-top: 130px;
+  margin-top: -130px;
+}
+
+/* Si tu navbar tiene una altura variable en móvil, considera ajustar este valor */
+@media (max-width: 991.98px) {
+  /* Para móviles, si el navbar es más pequeño (Bootstrap colapsado), puedes usar un valor menor, */
+  /* pero generalmente el valor del navbar sin colapsar es suficiente para cubrir ambos casos */
+  /* ¡Puedes probar con 100px primero, ya que es seguro! */
+}
+
+
+
+/* Limitar el tamaño del carrusel que está DENTRO de la tarjeta (el visible) */
+#carouselExampleSlidesOnly .carousel-inner {
+  /* Define la altura máxima que deseas para el carrusel de la tarjeta */
+  height: 250px;
+  position: relative;
 }
