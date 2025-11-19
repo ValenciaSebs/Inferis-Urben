@@ -9,6 +9,7 @@ h3,
 h5,
 p .custom-logo a {
   font-family: 'New Rocker', system-ui;
+  font-weight: bold;
 }
 
 
@@ -22,7 +23,7 @@ h2 {
   padding-top: 60px;
 }
 
-p
+
 
 /*Contenido principal*/
 html,
@@ -128,6 +129,7 @@ html {
   /* color inicial del texto y borde */
   color: #ab0001 !important;
   border-color: #ab0001 !important;
+  background-color: #f4eed8;
 }
 
 .muerte-btn:hover {
@@ -141,6 +143,7 @@ html {
 .mistico-btn {
   color: #7845ba !important;
   border-color: #7845ba !important;
+  background-color: #f4eed8;
 }
 
 .mistico-btn:hover {
@@ -153,6 +156,7 @@ html {
 .religion-btn {
   color: #c68b0c !important;
   border-color: #c68b0c !important;
+  background-color: #f4eed8;
 }
 
 .religion-btn:hover {
